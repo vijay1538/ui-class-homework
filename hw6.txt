@@ -1,0 +1,78 @@
+--pseudo-class selectors -- 
+
+The DOM is simply a structural representation of all the elements on the page. Most of the time it's referred to as a tree, as you can traverse up and down the tree to retrieve elements or the contents. That's basically what a browser does with your selectors. You're instructing it to traverse the DOM and targets the elements that it finds that match your criteria.
+
+Most of the time that's all you really need, but there are times when you're going to need the target elements that either exist outside of the DOM or target, say, the current state of an element. In many cases, elements can change based on user input, or other factors: links can be hovered over, buttons can be clicked and checkboxes checked.
+
+:hover---pseudo-class selector
+a:hover--targeted pseudo selector
+ul a:hover--descendent selector with pseudo selector
+
+Dynamic PSEUDO_CLASS SELECTORS:
+
+a:link{    }
+a:visited{
+	color:black;
+}
+a:hover{
+	background:orange;
+}
+a:active{
+	background:yellow;
+}
+
+STRUCTURAL PSEUDO-CLASS SELECTORS:
+
+target elements based on conditions like whether or not they are the first child of an element, whether they are the only child of it, and other factors.
+span:first-child{
+	font-size:1.3em;
+	font-weight:bold;
+	color:maroon;
+}
+
+Suppose we have 2 h2's in a section and we want to style only the first h2 then use this 
+
+h2:first-of-type{
+	
+}
+
+read through the Selectors Level 3 Specification
+
+Nth CHILD PSEUDO_CLASS SELECTORS:
+
+Nth-child selectors allow us to target elements based on patterns that describe which elements within a parent that you should target.
+
+li:nth-child(2){
+        background: tan;
+    }
+
+ this n is a grouping element. What this does is it says, instead of just targeting the second element, target every second element.
+
+ li:nth-child(2n){
+	background: tan;
+}
+
+li:nth-child(odd){           li:nth-child(even)
+	background: tan;
+}
+
+we have offset which says to start targeting from that number
+so if we want to target every 5th element of the list then
+
+li:nth-child(5n+5){
+	background: tan;
+}
+
+for contiguous selection
+this starts with 6th element from the top and 6th element from the bottom.
+
+li:nth-child(1n+6):nth-last-child(1n+6){
+	background: tan;
+}
+
+for non-contiguous selection
+this starts at 5th element from top and 5th from bottom and counts upward
+
+li:nth-child(-1n+5),li:nth-last-child(-1n+5){
+	
+}
