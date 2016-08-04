@@ -1,0 +1,49 @@
+1) fetch  -- if we want to check for any updates first we need to fetch
+
+2) pull   -- from the second time if we want to check for updates we pull.
+
+3) push   -- if we made any changes to the code and want to upload to the remote repository then PUSH.
+
+4) commit -- moving the code into the local repo.
+
+5) difference between commit and push?
+       --  commit is moving the code into local repo. PUSH is moving the code into remote repo.
+
+6) how to create merge conflicts ?
+       -- when two developers try to change the same line of code and if the first person try to push there will be no conflict, but when  second person try to push merge conflict arises.
+
+7) Resolve merge conflicts ?
+ 
+      -- pull the code you might have  a merge conflict 
+
+			-- open the code  of file with merge conflict
+
+			-- remove <<<<<<<<<head 
+			remove =============
+			remove >>>>>>>>>>>> number
+
+			-- STage and commit
+
+			-- pull 
+
+
+			-- push
+
+8) commit message why they are important ?
+
+           --- in future if we want to know what change we have made to the code, we need commit message.
+
+9) if you have a working copy and file are modified and not commited? you need to pull new chnages? what steps you need to take?
+
+           --- first stage the file 
+              -- then pull 
+              -- commit the code
+              -- push
+
+10) why is it good idea to pull first befor push?
+
+          -- we pull first because all the changes made to the code can be known to us and then we make our changes and push.
+
+11) why is it good idea to commit before we pull?
+
+           -- by the time we make changes to the code there may be some changes made by others , so inorder to keep our changes first we commit the code to local repo and we pull
