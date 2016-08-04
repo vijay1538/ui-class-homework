@@ -1,0 +1,76 @@
+-- BOOTSTRAP grid system and classes ??
+
+BOOTSTRAP:  Is a framework that helps you create websites quickly with tons of features that would be hard or take a long time for you to create yourself. Now Bootstrap has a mobile first approach which means that a website that you create with Bootstrap is mobile friendly.
+
+-- It has predefined classes that make layout super easy. 
+-- using a framework means that you're going to need to write your code in a very specific way.
+
+
+WORKING WIITH GRID -- Bootstrap comes with a 12-column grid which is super common for building responsive websites. 
+                        To access the grid you add CSS classes to your content and that allows you to create extremely flexible layouts.
+                        Three key concepts, containers, rows, and columns
+
+ CONTAINER--  Bootstrap container is declared through a special class that allows you to control the layout. Now adding this class is also going to create 15 pixels of padding on each side of the element. So the content within a layout never fully reaches the edge of the screen.
+
+two types of container -- fixed , fluid
+
+fluid -- The fluid container always adjusts to the size of the device so as you change the width of the browser, you'll see the content within a fluid container adjust. 
+
+fixed-width -- This is a container that will show a specific size, depending on the size of the viewport.
+                                        15px padding on each side
+                                        adjusts to media query breakpoints
+
+ROWS -- horizontal groups of columns
+                               placed within a container
+                               should always includes columns
+                               gets rid of container padding
+ COLUMNS -- when we create a column we are going to create gutters --> 30px gutter (15 px on each side)
+
+                                 use col-SIZE-SPAN -- size - when it stacks
+                                                        span - how many columns
+
+-- multiple column classes - eg: <section class = "col-sm-6 col-md-4 col-lg-2">
+-- resetting columns - class = "clearfix"   -- responsive utility classes -->  can use these responsive utility classes by using a keyword as a class called visible or hidden -- class = "clearfix visible-sm-block"
+
+-- offsetting columns -- In Bootstrap you can ask certain columns to move over by a certain number of column widths. That's called offsetting
+                            class = "col-xs-offset-3 col-sm-6 col-md-4 col-lg-2 "
+
+-- nesting columns -- Whenever you want to make really complicated layouts you can actually put rows inside other rows. And when you do that you essentially get another twelfth column grid inside your existing section.
+
+-- customizing column order with push and pull classes --> Now, pushing and pulling columns allows you to have the flexibility of completely rearranging the order of your columns depending on your break point.
+
+
+
+CLASSES :: utility classes -- helps us to create sites little bit quicker
+
+            -- styling heading and body copy -- emulate the same style as <h1> without using the h1 tag, <span class= "h1">
+
+            -- small tag -- can also create secondary text inside a headline or inside body copy using the small tag
+                              can also have a small class to use within your inline elements. In here you can say, "span small" and then put a word in there, and it behaves in a similar fashion making that piece of text small.
+
+            --->class = "lead" -- So I can say, "p class = lead" and that will try to make this piece of text stand out a little bit from the rest of the text. That can be useful when you're writing some content, to sort of have a paragraph that stands out.
+
+         Analyzing inline styles--> mark tag -- to highlight certain bits of text
+                                    s tag -- to strike through some of the text
+                                    del tag -- shows the text that has been deleted.
+                                    ins tag -- to show the text that is inserted
+                                    u tag -- works same as ins tag
+                                    strong tag -- to make text bold -- but it has a semantic meaning
+                                    b tag -- bold
+
+             Alignment classes -- for text elements -- class = "text-left" | "text-right" | "text-justify" | "text-nowrap"---> ** these classes have more specificity
+
+             Transformation classes -- take care of text transformation --> class = "text-lowercase" | "text-uppercase" | "text-capitalize"
+
+                                         abbreviation --> <abbr title="captain">capt.</abbr>
+
+             Blockquote --> <blockquote> --> <blockquote class = "blockquote-reverse"> -- aligns everything to the right
+
+             LIST styles --> <ol class = "list-unstyled"> | <ul class= "list-inline"> | <dl class = "dl-horizontal">
+
+             Styling code --> <code> -- inline code
+                              <kbd> -- control keys
+                              <var> -- variables
+                              <pre> -- short script -- whenevr we have preformatted text
+                              <samp> -- to show the results of some code-- sample output 
+                              <pre class= "pre-scrollable"> -- for longscript
