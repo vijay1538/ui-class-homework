@@ -1,0 +1,37 @@
+-- what is doctype ? why it is used ?
+
+            -- <!DOCTYPE> informs the browser which version of HTML (or XML) we used the to write the document
+            -- it's a declaration not a tag, it refers to "document type declaration "
+
+-- what are semantic elements ?
+            
+         -- semantic elements add meaning to the HTML page.
+         -- some of the semantic elemnts are --  <header>, <footer>, <main>, <nav> , <article> , <aside> , <section>
+
+         <nav> -- represents section of page that links to other pages or parts within pages
+
+         <section> -- consider the heading tags
+
+         <article> -- self contained information -- we can put it within section element or outside section element.
+
+
+         <aside>  -- The HTML <aside> element represents a section of the page with content connected tangentially to the rest, which could be considered separate 
+         from that content. these sections are represented by sidebars.
+
+         <footer> -- content info
+
+         <header> -- banner
+
+
+-- what are non-semantic elements ?
+
+             -- these elements doesnot provide any meaning to the content.
+             -- div , span
+
+-- difference between <section>, <div> and <article> ?
+
+          <div>  -- The HTML element (or HTML Document Division Element) is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <article> or <nav>) is appropriate.
+
+          <section> --  The HTML Section element (<section>) represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading.
+
+          <article> -- an an independent part of a document or site. This means it should be able to ‘stand alone’, and still make sense if you encountered it somewhere else (eg in an RSS feed). Examples include a weblog article (duh), a forum post or a comment. Like <section> these generally have a header, and maybe a footer
