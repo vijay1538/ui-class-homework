@@ -1,0 +1,39 @@
+-- difference between display: none and visibility : hidden ?
+
+      -- dispaly : none -- it doesnot occupy any space in the page and element will not be displayed
+
+      -- visibility : hiddem -- it occupies space in the page but element will not be displayed
+
+-- display property values , inline , inline-block , block ?
+
+         inline -- they donot begin with new line
+
+         inline-block -- this also doesn't begin in new line but we can specify the width and height.
+
+         block --  line break before and after the element and we can specify width and height.
+
+
+ -- inline css , internal css , external css ?
+
+          inline css -- this is applied for the particular element for which we specify the styles
+
+          internal css -- this styles are applied for the whole page --> these styles are provided in the <style> </style> tags in the head section of the document
+
+          external css -- this is the external source where we write the styles and link it to the pages we need the styles to be applied.
+
+
+      which style is considered the important is depends --> to build a website with multiple pages it's better to consider external css.
+
+
+  -- css specificity --  Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be 
+
+  applied. Specificity is based on the matching rules which are composed of CSS selectors of different sorts.
+
+                   -- increasing specificity --     Type selectors (e.g., h1) and pseudo-elements (e.g., :before).
+
+														Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+
+														ID selectors (e.g., #example).
+
+
+							!important -- when this is applied to  a style declaration then it overrides any other declarations.
