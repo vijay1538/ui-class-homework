@@ -1,0 +1,13 @@
+--input attributes in HTML ?
+
+        -- Elements in HTML have attributes; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.
+
+        -- there are many attributes that can be defined with the differnt elemnts.
+
+        -- align , alt , src , type , href , border , class , id , color , content ......
+
+
+-- what are semantic elements ?
+
+         -- semantic elements add meaning to the HTML page.
+         -- some of the semantic elemnts are --  <header>, <footer>, <main>, <nav> , <article> , <aside> , <section>
