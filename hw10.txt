@@ -1,0 +1,161 @@
+specificity --   
+
+
+        it is all about the selector precedence
+
+Most of the time the cascade, or inheritance, can be counted on to resolve styling conflicts; however, there is a third concept, specificity, that can come into play as well. Now understanding it is critical, as the majority of the time when authors have styling errors that they just can't quite figure out due to conflicts, specificity is usually the culprit. Now the specificity of a selector is just that--how specific is it? In the event of a conflict between two selectors that inheritance can't solve, the specificity of the selector is used to determine which selector has precedence.
+
+ID--100
+CLASS--10
+ELEMENT SELECTORS--1
+DESCENDENT SELECTOR--2
+
+
+CSS PROPERTIES ::   
+
+
+               font-family:Georgia,Arial,"Times New Roman",serif,sans-serif;
+@font-face:
+font-size:px,em,%;
+font-style:inherit,italic,normal,oblique;
+font-weight:bold,normal,bolder,lighter;
+text-transform:lowercase,uppercase,capitalize,inherit,none;
+font-variant:normal,small-caps
+TEXT DECORATION--  text-decoration: properties that we can use, underline, over-line, line, and blink
+TEXT COLOR---  color:
+               background-color:
+
+FONT SHORT HAND NOTATION----Shorthand notations are designed to do just that, save you time when writing what would otherwise, be multiple property declarations. Now essentially, the font shorthand notation allows us to define font-families, font-size, font- style, font-weight, font-variant and line-height, all in one property. It is a real timesaver.
+
+font: font-weight font-style font-variant font-size/line-height font-family
+
+we also have some keywords to pass for font short hand notation--icon,menu,message-box,small-caption,status-bar.
+
+TEXT ALIGNMENT-- text-align:left;--default
+                    text-align:right;
+                     text-align:center;
+                      text-align:justify;
+
+          HYPHENATION--   hyphens: none|manual|auto
+          more about hyphens--w3.org/TR/css3/text 
+
+          none--default
+          manual--manual uses words that are only broken at line breaks, where there are characters inside the word that suggests line break opportunities.
+          auto--auto is up to basically the user agent to determine where appropriate hyphenation points are.
+
+          for mozilla -moz-hyphens:auto;
+          for chrome  -webkit-hyphens:auto;
+
+LETTER SPACING AND WORD SPACING::
+
+letter-spacing:5px|1em|10%;
+word-spacing:5px|em|%;
+
+SVG spcification property--text rendering property---adopted by almost all the browsers as a way to control the rendering of the text within the Browser. Now SVG is a vector graphics specification, and this was really designed to control the rendering of vector text within the Browser space.
+
+         text-rendering:Auto|Optimize Speed| Optimize Legibility | Geometric Precision
+
+         Optimize Speed--go ahead and render characters with speed being foremost in mind.Quality and spacing of the characters doesn't matter.
+         Optimize Legibility--tells the Browser or the user agent, hey, really take some time, take a look at this text, figure out what the optimize rendering for this is in terms of character spacing, in terms of the rendering of the characters themselves, take your time on it.
+
+
+INDENTING TEXT::    text-indent: 1em;
+
+LINE HEIGHT:: Line Height controls the spacing between lines of multiple lines of text.
+
+       line-height:normal|140%|1.4em|1.4
+
+       BLOCK LEVEL ELEMENTS--meaning they occupy their own space in the document flow 
+       INLINE ELEMENTS--meaning they can appear side-by- side like images and spans.
+        display:inline-block--it means that the span element should still behave as an inline character, but I want it to display its properties like a block-level element.
+
+ELEMENT SPACING:: use margin-bottom:px;  at the end of each elemnt.
+
+
+
+
+
+STYLING CONTAINER ELEMENTS::
+
+UNDERSTANDING BOX MODEL: THE box model refers to the physical properties of an element's rectangular box.these are
+
+                            margins,borders,padding and content width,height.
+
+                            margin--increases the width and height outside of the element.
+                            padding--increases the width and height inside of the element.
+
+ADDING BORDERS ::   three different ways that you can apply borders in terms of their syntax; one is a very verbose, the second one is sort of a shorthand notation for a single side, and then we have a uniform shorthand notation that is extremely efficient.
+
+
+ROUNDED CORNERS::  border-radius:25px;
+				   border-top-left-radius:25px;.....
+
+				   LINK--www.w3.org/TR/css3-background
+				         www.css3generator.com
+
+BACKGROUND IMAGES::  background-image: url(...);
+					 background-color:blue;
+					 background-repeat:repeat-x;---->this repeats the image along x-axis.
+					 background-repeat:no-repeat;--->image doesn't repeats.
+
+IMAGE POSITIONING::  background-position: left top;|left bottom;....
+                      better to write the horizontal vertical values than vertical horiz.
+
+                      background-attachment: fixed----->background-attachment allows us to have basically two values--fixed or scroll.
+
+                       Scroll--> is the default, which just basically means that it wants you to position the background image relative to its container, the element that you applied it to.
+
+                       fixed-->fix the background image relative to the viewport, not the containing element.
+
+MULTIPLE BACKGROUNDS:: to show the multiple images in an element stack the images together seperated by comma.
+
+                         background-image: url(...),url(...);
+
+BACKGROUND SHORTHAND NOTATION::  background: color url() background-repeat background-position;
+
+                                ** but in the case of multiple backgrounds [color] must be placed at the last
+
+                                background: url() background-repeat background-position,url() background-repeat background-position,color;
+
+
+
+WORKING WITH COLOR::
+
+                   LINK-->  KULER.ADOBE.COM
+
+                   background:#ffffff | rgb(45%,70%,20%)
+                   color:rgb(125,255,125);
+
+                   ANOTHER option to define color-->HSL-->[hue,saturation,lightness]
+
+                   HUE ranges--> 0 to 360--> angle on the color wheel.
+                   SATURATION --> amount of color, how much color a particular shade has. --> 0-100%
+                   LIGHTNESS --> 0-100%
+
+
+                   background:hsl(240,100%,80%);
+
+        OPACITY--> to set the transparency of an element.--> range-- 0-1.
+                   opacity:1;
+
+        RGBA, HSLA--> A more recent way to define transparency for objects through CSS, is through the use of RGBA and HSLA syntax. Now this technique involves passing an alpha value through a regular RGB or HSL color definition. And what's nice about that, is you can then define the transparency on either the foreground color, background color or border color really anything that you can apply a color to. And this allows you to have varying degrees of transparency within the element.
+
+        **we can't apply apha values to background images.
+
+        rgba(102,0,0,.4);
+        hsla(120,50%,50%,.6);
+
+
+     STYLING DROP SHADOWS:: two ways 1.BOX SHADOW
+                                     2.TEXT SHADOW
+
+                                     box-shadow:10px 10px 5px 5px rgba(0,0,0,.7);
+                                                1.horizontal 2.vertical length of drop shadow  3.blur radius  4.spread
+                                     text-shadow:10px 10px 5px rgba(0,0,0,.7)---->no spread here
+
+     CSS GRADIENTS:: way of defining backgrounds.
+
+                          background: linear-gradient(top, #F&F0B7 0%, #b57c12 100%);
+                          background: -moz-linear-gradient(top, #F&F0B7 0%, #b57c12 100%);
+                          background: -webkit-linear-gradient(top, #F&F0B7 0%, #b57c12 100%);
+                                                               starting from top apply this color starts from 0% and apply next color starts 100%
