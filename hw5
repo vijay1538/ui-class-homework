@@ -1,0 +1,55 @@
+SELECTORS :
+             
+
+            these are used to targeting the page content
+
+            class selectors -- use class attribute -- we can have multiple classes
+                                
+                                .aside{...}
+                               <aside class = "aside1" > .. </aside>
+
+            id selectors -- use id attribute -- id must be unique
+
+                                #aside{..}
+                                <aside id="aside">
+
+            element specific selectors --    eg-  h2.artist{...}
+                                                  <h2 class = "artist"></h2>
+
+             universal selector -- applies to everything
+
+                                     *{
+                                      color: red;
+                                     }
+
+              grouping selectors --   we can group the selectors if we want to apply same style to different elements
+
+                                       aside,article,section,header{
+
+                                       }
+
+              descendent selectors --  eg::  header h1{..}
+                                             article h2{..}
+
+
+              child selector ::  descendent selectors applies to all descendents of that parent elemnt
+
+                                  child selector applies only to direct children of the parent.
+
+                                  eg: article>h2{..}
+
+
+               adjacent selector :  allow us to target elements based on which elemnts follow one another in the code
+
+                                      h2+p{   ---> target the <p> that comes immediately after h2.
+
+                                      }
+
+
+               attribute selectors :  allow us to target elements based on the elements attributes and values of those attributes.
+
+                                       eg :  a[title] {...}
+
+                                       apply based on value of attribute -- a[title ="home"]
+
+                                       a[title ~="red"]{} -- go ahead and look for whitespace seperated list that includes this word.
